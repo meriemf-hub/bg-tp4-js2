@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#table_container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th {
+    background-color: #007bbd;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.col_number,
+.col_chkbox {
+    text-align: center;
+}
+
+
+.col_text {
+    text-align: left;
+}

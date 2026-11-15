@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion des points</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form id="person-form">
+        <label for="nom">Nom:</label>
+        <input id="nom" name="nom" type="text" required />
+
+        <label for="prenom">Prénom:</label>
+        <input id="prenom" name="prenom" type="text" required />
+
+        <label for="points">Points:</label>
+        <input id="points" name="points" type="number" min="0" required />
+
+        <button class="add-btn" type="submit">Ajouter</button>
+      </form>
+
+      <p id="message" aria-live="polite"></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">N°</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Points</th>
+            <th scope="col">Select</th>
+          </tr>
+        </thead>
+        <tbody id="person-table-body"></tbody>
+        <tfoot>
+          <tr class="summary-row">
+            <td id="line-count" colspan="2">0 ligne(s)</td>
+            <td id="total-points" colspan="3">Total point(s)= 0</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="actions">
+        <button id="console-btn" class="console-btn" type="button">Console Tableau</button>
+        <button id="delete-selected-btn" class="delete-btn" type="button">Supprimer</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
